@@ -1,0 +1,14 @@
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/WarRogue
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/WarRogue.deps.json
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/WarRogue.runtimeconfig.json
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/WarRogue.dll
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/WarRogue.pdb
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.AssemblyInfoInputs.cache
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.AssemblyInfo.cs
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.csproj.CoreCompileInputs.cache
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.dll
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/refint/WarRogue.dll
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.pdb
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/WarRogue.genruntimeconfig.cache
+/Users/cole/Projects/Rougelike/WarRogue/obj/Release/net8.0/ref/WarRogue.dll

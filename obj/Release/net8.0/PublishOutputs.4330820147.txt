@@ -1,0 +1,5 @@
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/publish/WarRogue
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/publish/WarRogue.dll
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/publish/WarRogue.deps.json
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/publish/WarRogue.runtimeconfig.json
+/Users/cole/Projects/Rougelike/WarRogue/bin/Release/net8.0/publish/WarRogue.pdb
