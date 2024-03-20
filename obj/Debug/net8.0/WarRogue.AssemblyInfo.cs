@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WarRogue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ec33a0478afd94bf4d244c81ddd8f0be180a96b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WarRogue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WarRogue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
