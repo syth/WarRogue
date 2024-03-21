@@ -1,10 +1,10 @@
-using System;
+using WarRogue;
 
-namespace WarRogue {
-    class Program {
-        static void Main ( string[] args ) { 
-            Game game = new Game();
-            game.Play();
-        }
+internal class Program
+{
+    private static void Main( string[] args )
+    {
+        Game game = new();
+        game.Play();
     }
 }

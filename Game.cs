@@ -1,11 +1,8 @@
-using System;
-using System.Collections.Generic;
-
 namespace WarRogue {
     public class Game {
-        private Deck deck;
-        private Player player1;
-        private Player player2;
+        private readonly Deck deck;
+        private readonly Player player1;
+        private readonly Player player2;
 
         public Game() {
             deck = new Deck();
@@ -32,11 +29,12 @@ namespace WarRogue {
 
                 if ( CardComparer.IsCardHigher( player1Card, player2Card ) ) {
                     Console.WriteLine( "Player 1 wins the round." );
-                    // Add logic to handle the win
+                    // TODO: Add logic to handle the win
                 } else if ( CardComparer.IsCardHigher( player2Card, player1Card ) ) {
                     Console.WriteLine( "Player 2 wins the round." );
-                    // Add logic to handle the win
+                    // TODO: Add logic to handle the win
                 } else {
+                    // TODO: Add logic to go to war (possibly make a method for when war happens multiple times [nested wars])
 
                 }
 

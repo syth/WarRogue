@@ -22,23 +22,23 @@ namespace WarRogue {
         King = 13
     }
     public class Card {
-        public Suit suit { get; private set; }
-        public Value value { get; private set; }
+        public Suit Suit { get; private set; }
+        public Value Value { get; private set; }
 
         public Card( Suit suit, Value value )
         {
-            this.suit = suit;
-            this.value = value;
+            Suit = suit;
+            Value = value;
         }
 
         public override string ToString() {
-            return $"{value} of {suit}";
+            return $"{Value} of {Suit}";
         }
     }
 
     public class CardComparer {
         public static bool IsCardHigher( Card card1, Card card2 ) {
-            return card1.value > card2.value;
+            return card1.Value > card2.Value;
         }
     }
 

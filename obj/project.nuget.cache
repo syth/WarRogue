@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ihHmcbU56jmI353c0ZxUJZ6FXvtMfUHi2aCGFFaf2To6sjlrIVwLr6HVKFritgDlqN1vfPshxLi6d8cbo3/qrQ==",
+  "dgSpecHash": "/1p32AzA+vnqAEL4WFExdXAFKy964yOsFJyVktVl7qwqg+Gd18joq2whINzJCNMlYWFV6KmTV0kcRLP7dsh20A==",
   "success": true,
   "projectFilePath": "/Users/cole/Projects/Rougelike/WarRogue/WarRogue.csproj",
-  "expectedPackageFiles": [
-    "/Users/cole/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "/Users/cole/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
-    "/Users/cole/.nuget/packages/microsoft.netcore.app.host.osx-arm64/6.0.28/microsoft.netcore.app.host.osx-arm64.6.0.28.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
