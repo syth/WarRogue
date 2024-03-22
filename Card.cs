@@ -21,6 +21,7 @@ namespace WarRogue {
         Queen = 12,
         King = 13
     }
+
     public class Card {
         public Suit Suit { get; private set; }
         public Value Value { get; private set; }
