@@ -25,9 +25,14 @@ namespace WarRogue {
                 if( !player1.HasCards() && player1.Discard.Count > 0 )
                 {
                     // TODO: Add implementation for adding discard deck to hand
+                    player1.AddDiscardToHand();
                 }
 
+                if( !player2.HasCards() && player2.Discard.Count > 0 )
+                {
                 // TODO: Add implementation for adding discard deck to hand (player 2)
+                    player2.AddDiscardToHand();
+                }
 
                 Card player1Card = player1.PlayCard();
                 Card player2Card = player2.PlayCard();

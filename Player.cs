@@ -21,7 +21,9 @@ namespace WarRogue {
                 Hand.RemoveAt( 0 );
                 return card;
             } else {
-                throw new InvalidOperationException( "Deck is empty." );
+                //throw new InvalidOperationException( "Deck is empty." );
+                // TODO: Instead of throwing new exception call AddDiscardToHand
+                return null;
             }
         }
 
