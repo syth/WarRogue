@@ -16,14 +16,25 @@ namespace WarRogue {
         }
 
         public Card PlayCard() {
-            if ( Hand.Count > 0 ) {
-                Card card = Hand[ 0 ];
-                Hand.RemoveAt( 0 );
+            if (Hand.Count > 0)
+            {
+                Card card = Hand[0];
+                Hand.RemoveAt(0);
                 return card;
-            } else {
-                //throw new InvalidOperationException( "Deck is empty." );
-                // TODO: Instead of throwing new exception call AddDiscardToHand
-                return null;
+            }
+            else
+            {
+                AddDiscardToHand();
+                if (Hand.Count > 0)
+                {
+                    Card card = Hand[0];
+                    Hand.RemoveAt(0);
+                    return card;
+                }
+                else
+                {
+                    throw new EmptyHandException( "The Hand is empty. There are no cards to play." );
+                }
             }
         }
 
@@ -47,7 +58,7 @@ namespace WarRogue {
                 
             } else              // If the hand is not empty then discarded cards cannot be added
             {
-                throw new InvalidOperationException( "Hand is not empty." );
+                throw new HandNotEmptyException( "The Hand is not empty. There are cards to play." );
             }
         }
 
