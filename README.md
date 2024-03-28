@@ -2,7 +2,7 @@
 
 WarRogue is a roguelike variant of the card game War. Inspired by game such as [Balatro](https://store.steampowered.com/app/2379780/Balatro/), [Dungeons & Degenerate Gamblers](https://store.steampowered.com/app/2400510/Dungeons__Degenerate_Gamblers/), and [Bingle Bingle](https://store.steampowered.com/app/2789810/Bingle_Bingle/)
 
-WarRogue is my take on the roguelike card games that are a big hit!
+WarRogue is my take on the roguelike card games that the internet and I are currently addicted to.
 
 ## Author
 
