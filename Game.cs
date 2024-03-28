@@ -4,11 +4,11 @@ namespace WarRogue {
         private readonly Player player1;
         private readonly Player player2;
 
-        public Game() {
+        public Game( string player1Name, string player2Name ) {
             deck = new Deck();
             deck.Shuffle();
-            player1 = new Player( "Player 1" );
-            player2 = new Player( "Player 2" );
+            player1 = new Player( player1Name );
+            player2 = new Player( player2Name );
             DealInitialCards();
         }
 
@@ -24,48 +24,62 @@ namespace WarRogue {
 
                 if( !player1.HasCards() && player1.Discard.Count > 0 )
                 {
-                    // TODO: Add implementation for adding discard deck to hand
-                    Console.WriteLine("Player 1 draws from their discard pile.");
+                    Console.WriteLine( $"{ player1.Name } draws from their discard pile.");
                     player1.AddDiscardToHand();
                 }
 
                 if( !player2.HasCards() && player2.Discard.Count > 0 )
                 {
-                    // TODO: Add implementation for adding discard deck to hand (player 2)
-                    Console.WriteLine("Player 2 draws from their discard pile.");
+                    Console.WriteLine( $"{ player2.Name } draws from their discard pile.");
                     player2.AddDiscardToHand();
                 }
 
-                Card player1Card = player1.PlayCard();
-                Card player2Card = player2.PlayCard();
-                List<Card> playedCards = new()
+                try
+                {
+                    Card player1Card = player1.PlayCard();
+                    Card player2Card = player2.PlayCard();
+                    List<Card> playedCards = new()
                 {
                     player1Card,
                     player2Card
                 };
+                    Console.WriteLine($"{player1.Name} plays: {player1Card}");
+                    Console.WriteLine($"{player2.Name} plays: {player2Card}");
 
-                Console.WriteLine( $"Player 1 plays: {player1Card}" );
-                Console.WriteLine( $"Player 2 plays: {player2Card}" );
+                    if (CardComparer.IsCardHigher(player1Card, player2Card))
+                    {
+                        Console.WriteLine($"{player1.Name} wins the round.");
+                        player1.DiscardDeck(playedCards);
+                    }
+                    else if (CardComparer.IsCardHigher(player2Card, player1Card))
+                    {
+                        Console.WriteLine($"{player2.Name} wins the round.");
+                        player2.DiscardDeck(playedCards);
+                    }
+                    else
+                    {
+                        Console.WriteLine($"A war has broken out between {player1.Name} and {player2.Name}!");
+                        // TODO: Add logic to go to war (possibly make a method for when war happens multiple times [nested wars])
 
-                if ( CardComparer.IsCardHigher( player1Card, player2Card ) ) {
-                    Console.WriteLine( "Player 1 wins the round." );
-                    player1.DiscardDeck(playedCards);
-                } else if ( CardComparer.IsCardHigher( player2Card, player1Card ) ) {
-                    Console.WriteLine( "Player 2 wins the round." );
-                    player2.DiscardDeck(playedCards);
-                } else {
-                    // TODO: Add logic to go to war (possibly make a method for when war happens multiple times [nested wars])
-
+                    }
+                } catch ( EmptyHandException )
+                {
+                    if (player1.HasCards())
+                    {
+                        Console.WriteLine($"{player1.Name} wins!");
+                        break;
+                    }
+                    else if (player2.HasCards())
+                    {
+                        Console.WriteLine($"{player2.Name} wins!");
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("It's a tie!");
+                        break;
+                    }
                 }
-
-            }
-
-            if ( player1.HasCards() ) {
-                Console.WriteLine( "Player 1 wins!" );
-            } else if ( player2.HasCards() ) {
-                Console.WriteLine( "Player 2 wins!" );
-            } else {
-                Console.WriteLine( "It's a tie!" );
             }
         }
     }
